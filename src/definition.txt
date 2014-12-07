@@ -3,40 +3,62 @@ Data Structure Definition:
 
 1) why do we need data structure?
 
-answer:
+answer: For managing data in a systematic way
 
 2) List out the areas in which data structures are applied extensively?
-
+Compiler design, Operating System Design, Database Management System, Statistical Analysis, Numerical Analysis, Graphips, Artificial Intelligence, Simulation
 3) what is an Array?
+An array is a container object that holds a fixed number of values of a single type
 
 4) what is the difference between the Array and ArrayList?
-
+Array is fixed length data structure and array list is a variable length collection class
 5) what is LinkedList?
-
+Linked list is a collection of data where a current value knows the next address
 6) what is queue?
-
+Queue is a collection of data which follows first in first out
 7) what is stack?
-
+Stack is a collection of data that follows last in first out
 8) what is FIFO and LIFO?
-
+  First in, First out and Last in First out
 9) what is the order of complexity?
-
+Time complexity Space Complexity
 10)what is the best case to search an element from an array?
-
+O(1)
 11)what is the worst case to search an element from an array?
-
+O(n)
 12) what is tree in data structure?
-
+a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root.
 13) what is graph in data structure?
-
+A graph data structure consists of a finite (and possibly mutable) set of nodes or vertices
 14) what is the difference between the HashTable and HashMap?
-
+HashTable is synchronized, but HashMap is not.
+HashTable doesnot allow null key or null value, HashMap allows one null key  and any number of null value
+One of the subclass of HashMap is LinkedHashMap, but it is not easy for HashTable.
 15) What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+RDBMS - Array
+Ntwork - Data Model v- Graph
+Hierarchical Data Model - Tree
 
 16) How HashMap works in java?
+HashMap works on the principle of Hashing .  To understand Hashing , we should understand the three terms first   i.e  Hash Function , Hash Value and Bucket .
+hashCode() function  which returns an integer value is the Hash function. The important point to note that ,  this method is present in Object class ( Mother of all class ) .
+
+ This is the code for the hash function(also known as hashCode method) in Object Class :
+
+     public native int hashCode();
+
+
+
+The most important point to note from the above line :  hashCode method return  int value .
+ So the Hash value is the int value returned by the hash function .
+
+
+A bucket is used to store key value pairs . A bucket can have multiple key-value pairs . In hash map, bucket used simple linked list to store objects .
+
+
 
 17)What is Big-(O)-notation?
-
+Big-O notation is how programmers talk about algorithms
 18)Outlined different kind of sorting algorithm with time complexity?
 
 19) Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.

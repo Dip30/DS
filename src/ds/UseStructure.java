@@ -7,18 +7,24 @@ import java.util.Stack;
 
 public class UseStructure {
 	
-	LinkedList<String> list;
-	ArrayList<String> arrayList;
-	Stack<String> stack;
-	Queue<String> queue;
+	public UseStructure(){
+	
+	}
+	
+	LinkedList<String> list= new LinkedList<String>();
+	ArrayList<String> arrayList = new ArrayList<String>();
+	Stack<String> stack = new Stack<String>();
+	Queue<String> queue = new LinkedList<String>() {
+	};
 	
 	//add data into the LinkedList
 	public void addByLinkedList(String name){
- 
+            list.add(name);
+            
 		
 	}
 	//Retrieve data and return the LinkedList
-	public LinkedList<String> returnByLinkedList(String name){
+	public LinkedList<String> returnByLinkedList(){
 	
 			
 	return list;
@@ -27,25 +33,24 @@ public class UseStructure {
 	
 	//add data into the ArrayList
 	public void addByArrayList(String name){
-
+          arrayList.add(name);
 		 
 			
 	}
 	//Retrieve data and return the ArrayList
-	public ArrayList<String> returnByArrayList(String name){
-		
+	public ArrayList<String> returnByArrayList(){
 				
 	return arrayList;
 				
 	}
 	//add data into the Stack
 	public void addByStack(String name){
-
+          stack.add(name);
 			 
 				
 	}
 	//Retrieve data and return as Stack order
-	public Stack<String> returnByStack(String name){
+	public Stack<String> returnByStack(){
 			
 					
 	return stack;
@@ -53,12 +58,12 @@ public class UseStructure {
 	}
 	//add data in Queue order
 	public void addByQueue(String name){
-
+           queue.add(name);
 			 
 				
 	}
 	//Retrieve data and return in Queue order
-	public Queue<String> returnByQueue(String name){
+	public Queue<String> returnByQueue(){
 			
 					
 	return queue;
